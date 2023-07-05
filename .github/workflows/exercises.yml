@@ -1,0 +1,29 @@
+name: Exercises
+
+on:
+  push:
+    paths:
+      - 'exercises/**/*'
+  pull_request:
+    paths:
+      - 'exercises/**/*'
+
+jobs:
+  run-exercises:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Swift
+        uses: actions/setup-swift@v1
+        with:
+          swift-version: '5.8'
+      - name: Run Playground Tests
+        run: |
+          for file in $(git diff --name-only ${{ github.base_ref }}...${{ github.head_ref }}); do
+            if [[ $file == exercises/*/Contents.swift ]]; then
+              playground_dir=$(dirname $file)
+              cd $playground_dir
+              swift test --enable-code-coverage
+            fi
+          done
