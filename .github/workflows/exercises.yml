@@ -9,13 +9,13 @@ on:
       - 'exercises/**/*'
 
 jobs:
-  run-exercises:
+  run:
     runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Set up Swift
-        uses: actions/setup-swift@v1
+        uses: swift-actions/setup-swift@v1
         with:
           swift-version: '5.8'
       - name: Run Playground Tests
