@@ -22,7 +22,7 @@ class OptionalsTests: XCTestCase {
         var value: Int?
         value = 42
         
-        XCTAssertEqual(42, value!)
+        XCTAssertEqual(0, value!)
     }
     
     func testSafeUnwrapWithDefault() {
