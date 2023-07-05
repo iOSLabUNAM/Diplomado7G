@@ -49,7 +49,6 @@ class OptionalsTests: XCTestCase {
     // func testGuardClauseExercise() {
     //     var value: Int?
     //     value = 42
-
     //     XCTAssertTrue(evaluateOptional(value: value))
     //     value = nil
     //     XCTAssertFalse(evaluateOptional(value: value))
