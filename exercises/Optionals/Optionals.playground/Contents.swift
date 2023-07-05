@@ -45,13 +45,19 @@ class OptionalsTests: XCTestCase {
         }
     }
 
-    func testGuardClauseExercise() {
-        var value: Int?
-        value = 42
+    // Solve this exercise using guard clause for unwrapping optionals
+    // func testGuardClauseExercise() {
+    //     var value: Int?
+    //     value = 42
 
-        XCTAssertTrue(evaluateOptional(value: value))
-        value = nil
-        XCTAssertFalse(evaluateOptional(value: value))
+    //     XCTAssertTrue(evaluateOptional(value: value))
+    //     value = nil
+    //     XCTAssertFalse(evaluateOptional(value: value))
+    // }
+
+    // func evaluateOptional(value: Int?) -> Bool {
+    //     return false // TODO: replace with guard clause
+    // }
 }
 
 OptionalsTests.defaultTestSuite.run()
