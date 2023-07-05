@@ -49,6 +49,7 @@ class OptionalsTests: XCTestCase {
     // func testGuardClauseExercise() {
     //     var value: Int?
     //     value = 42
+
     //     XCTAssertTrue(evaluateOptional(value: value))
     //     value = nil
     //     XCTAssertFalse(evaluateOptional(value: value))
@@ -59,4 +60,14 @@ class OptionalsTests: XCTestCase {
     // }
 }
 
-OptionalsTests.defaultTestSuite.run()
+// Run the tests
+let testSuite = OptionalsTests.defaultTestSuite
+testSuite.run()
+let testRun = testSuite.testRun as! XCTestSuiteRun
+
+// Check if any test failed
+if testRun.hasSucceeded {
+    exit(0) // Success
+} else {
+    exit(1) // Failure
+}
