@@ -5,16 +5,16 @@ Recursos y ejercicios para el diplomado 7a generación
 Instructores: 
 
 Grecia Escárcega
-GitHuh: @GreciaEM
+GitHub: @GreciaEM
 
 Alejandro Mendoza
-GitHuh: @Zippi-MD
+GitHub: @Zippi-MD
 
 Luis ezcurdia
-GitHuh: @3zcurdia
+GitHub: @3zcurdia
 
 Manuel Sánchez 
-GitHuh: @Mannook
+GitHub: @Mannook
 
 
 
